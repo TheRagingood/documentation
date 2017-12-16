@@ -10,4 +10,5 @@
     * [Heroku](standard-file/self-hosting/heroku.md)
     * [EC2 & Nginx](standard-file/self-hosting/ec2-and-nginx.md)
     * [Preconfigured Image](standard-file/self-hosting/preconfigured-image.md)
+* Client Development
 
