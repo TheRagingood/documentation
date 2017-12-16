@@ -52,18 +52,18 @@ All Standard Notes apps are [open source](https://github.com/standardnotes). Thi
 
 It's not something we consider often, but odds are, you as a human will outlive most of the private services you rely on today to manage your data. By building on top of a more open format, Standard Notes users don't have to worry about what would happen if Standard Notes got run over by a bus.
 
-# Technical FAQ
+# FAQ
 
 **How do you know you'll be here for a while?**
-<br>
+
 What makes software difficult to maintain is a growing feature set that constantly introduces a myriad of bugs and stability issues. Because we're committed to "freezing" our feature set as-is, the only maintenance work required is OS level compliance updates every year. While this is still a non-zero amount of work, it is far more manageable than a typical software project that aims to grow and grow every year. Because we're also not interested in "scaling", our costs should remain relatively low and allow us to sustain these applications for an extended period of time, if not indefinitely.
 
 **How can I get involved?**
-<br>
+
 We love community contributions. If you're a notes-enthusiast, share with your friends and followers, and help create a more sustainable notes environment. If you're a developer, check out our [repositories](https://github.com/standardnotes) on Github and see where you can help. You can also host your own Standard File server for other community members to use and join. If you launch your own community server, [let us know](mailto:hello@standardnotes.org).
 
 You can also join the [Standard Notes Slack group](https://standardnotes.org/slack) to get involved.
 
 **How can I get in touch?**
-<br>
+
 You can follow us on [Twitter](https://twitter.com/standardnotes) for updates and announcements. Or say hello at [hello@standardnotes.org](mailto:hello@standardnotes.org).
