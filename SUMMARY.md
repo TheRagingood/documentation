@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Extensions](extensions.md)
   * [Components](extensions/components.md)
-  * Actions
+  * [Actions](extensions/actions.md)
   * [Themes](extensions/themes.md)
 * [Self Hosting](self-hosting.md)
 * [Standard File](standard-file.md)
