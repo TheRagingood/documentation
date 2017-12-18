@@ -1,10 +1,10 @@
 # Components API Documentation
 
-Components are UI blocks that can replace or be appended to sections of the Standard Notes desktop and web app. They allow us to do cool things like nested folders, tag autocomplete, and utility bars in the editor pane.
+Components are UI blocks that can replace or be appended to sections of the Standard Notes desktop and web app. They allow us to do cool things like custom editors, nested folders, tag autocomplete, and utility bars in the editor pane.
 
 Building a component is easily done using the our JavaScript Components library. All you have to do is build a single-page web app using any framework you like (plain, Angular, React, etc), then use our components library to interact with the main window to save and request data.
 
-## Getting Started
+## Building a Component
 
 In this example, we'll use our blank-slate AngularJS template to build a utility bar that counts the number of words in the current note.
 
@@ -97,6 +97,15 @@ If you'd like to see the finished product, switch to the `word-counter` branch:
 ```
 git checkout word-counter
 ```
+
+## Available Areas
+
+Areas tell Standard Notes where to display a particular component. The current list of available areas are:
+
+- `tags-list`: replaces the tags pane with a custom component. We use this for the Folders component.
+- `note-tags`: replaces the editor pane's tags area with a custom component. We use this for autocomplete tags.
+- `editor-stack`: adds custom-sized components in a stack in the editor pane. This does not replace any native modules but simply adds layers on top of the editor pane. We use this for the Action Bar and GitHub Push components.
+- `editor-editor`: replaces the plain text editor with a custom editor. We use this for all of our editors, including Markdown, Code, and Plus.
 
 ## Next Steps
 
