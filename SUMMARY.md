@@ -12,4 +12,5 @@
   * [Heroku](standard-file/self-hosting/heroku.md)
   * [Preconfigured Image](standard-file/self-hosting/preconfigured-image.md)
 * [Client Development](client-development.md)
+* [Improve Documentation](improve-documentation.md)
 
