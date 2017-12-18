@@ -99,15 +99,15 @@ In this example, we'll recreate a simple clone of Listed.
 
     Actions have the following properties:
 
-      - `label`: What the UI will display for this action.
-      - `url`: The URL that Standard Notes will make a request to when the user selects this action.
-      - `verb`: Instructs Standard Notes how to handle the URL. This can be one of:
-        - `show`: Standard Notes will open the `url` in a browser.
-        - `post`: Standard Notes will make a POST request to the `url` with the current item included in the parameters.
-        - `get`: Standard Notes will make a GET request to the `url` and expect an `Item` in response. The item will be used to update the current working note. We use this for our Note History extension to update the current note with a previous version of it.
-        - `render`: Standard Notes will make a `GET` request to the `url` and expect an `Item`, but instead of updating the item, it will preview it in a modal. This allows a user to preview the contents of an incoming item before choosing to replace the current note with whatever is retrieved from the server. We also use this in our Note History extension.
-      - `context`: Context should mostly be `Item`, which means that this action applies to a particular item, and is not just a general action. In the past, `context` could take on the value of `global`, which means it has actions available that are not related to an item. However, this functionality is unofficially deprecated, with an official deprecation coming soon.
-      - `content_types`: The kinds of items this action applies to. Currently only 'Note' actions are supported. In the future, we might allow for actions on a `Tag` or other content types, but no such interface is currently available.
+      - **`label`**: What the UI will display for this action.
+      - **`url`**: The URL that Standard Notes will make a request to when the user selects this action.
+      - **`verb`**: Instructs Standard Notes how to handle the URL. This can be one of:
+        - **`show`**: Standard Notes will open the `url` in a browser.
+        - **`post`**: Standard Notes will make a POST request to the `url` with the current item included in the parameters.
+        - **`get`**: Standard Notes will make a GET request to the `url` and expect an `Item` in response. The item will be used to update the current working note. We use this for our Note History extension to update the current note with a previous version of it.
+        - **`render`**: Standard Notes will make a `GET` request to the `url` and expect an `Item`, but instead of updating the item, it will preview it in a modal. This allows a user to preview the contents of an incoming item before choosing to replace the current note with whatever is retrieved from the server. We also use this in our Note History extension.
+      - **`context`**: Context should mostly be `Item`, which means that this action applies to a particular item, and is not just a general action. In the past, `context` could take on the value of `global`, which means it has actions available that are not related to an item. However, this functionality is unofficially deprecated, with an official deprecation coming soon.
+      - **`content_types`**: The kinds of items this action applies to. Currently only 'Note' actions are supported. In the future, we might allow for actions on a `Tag` or other content types, but no such interface is currently available.
 
 3. When a user selects the action, your server should be ready to handle that endpoint, and in most cases expect an item. Here's how Listed handles the "Publish to Blog" action:
 
