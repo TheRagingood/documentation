@@ -92,10 +92,10 @@ Save all changes, and make sure the `grunt watch` process catches those changes 
 
 4. That's it! You should now see a little bar on the bottom of the editor pane that has the number of words for the current note. If it's a new note, type some words in the editor, and watch the component refresh automatically.
 
-If you'd like to see the finished product, switch to the `word-counter` branch:
+If you'd like to see the finished product, switch to the `word-count` branch:
 
 ```
-git checkout word-counter
+git checkout word-count
 ```
 
 ## Available Areas
