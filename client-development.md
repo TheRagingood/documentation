@@ -403,9 +403,9 @@ After successful sync, delete the item from your local database.
 
 ## Next Steps
 
-Join the [Slack](https://standardnotes.slack.com) group for general development discussion. You can also email [dev@standardnotes.org](mailto:dev@standardnotes.org) for any questions.
+Join the [Slack](https://standardnotes.org/slack) group for general development discussion. You can also email [dev@standardnotes.org](mailto:dev@standardnotes.org) for any questions.
 
-Check out the source code for other completed clients!
+Check out the source code for other completed clients:
 
 * [iOS + Android](https://github.com/standardnotes/mobile)
 * [Web](https://github.com/standardnotes/web)
