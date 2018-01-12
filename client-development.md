@@ -21,11 +21,11 @@ Auth params include:
 - pw_cost (the number of iterations for the kdf)
 
 
-Next, compute the user's password and encryption keys using the user's text field inputted password:
+Next, compute the user's password and encryption keys using the user's text field inputted password, the `pw_salt` and `pw_cost` fields as received earlier, and a `PBKDF2` output length of 768 bits:
 
 ```
-generatePasswordAndKey(password, pw_salt, pw_func, pw_alg, pw_cost, pw_key_size) {		
-	var output = PBKDF2(password, pw_salt, { keySize: 768/32, hasher: CryptoJS.algo.SHA512, iterations: pw_cost }).toString();
+generatePasswordAndKey(password, pw_salt, pw_cost) {		
+	var output = PBKDF2(password, pw_salt, { keySize: 768, hasher: CryptoJS.algo.SHA512, iterations: pw_cost }).toString();
 
 	var outputLength = output.length;
 	var splitLength = outputLength/3;
