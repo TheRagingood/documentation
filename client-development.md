@@ -355,7 +355,7 @@ referencesParams() {
 
 **CryptoHelper**
 
-Please see the web implementation for encrypting and decrypting items, available here: https://github.com/standardnotes/web/blob/master/app/assets/javascripts/app/services/helpers/encryptionHelper.js.
+Please see the web implementation for encrypting and decrypting items, available [here](https://github.com/standardnotes/web/tree/master/app/assets/javascripts/app/services/encryption).
 
 Next, let's merge `refreshItems()` and `saveDirty()` into one function called `sync()`:
 
@@ -403,17 +403,13 @@ After successful sync, delete the item from your local database.
 
 ## Next Steps
 
-Join the [Slack](https://slackin-ekhdyygaer.now.sh/) group to discuss implementation questions.
+Join the [Slack](https://standardnotes.slack.com) group for general development discussion. You can also email [dev@standardnotes.org](mailto:dev@standardnotes.org) for any questions.
 
-You can also email [dev@standardnotes.org](mailto:dev@standardnotes.org) for any questions.
+Check out the source code for other completed clients!
 
-Check out the source code for other completed clients:
+* [iOS + Android](https://github.com/standardnotes/mobile)
+* [Web](https://github.com/standardnotes/web)
 
-iOS: [https://github.com/standardnotes/iOS]()
-
-Web: [https://github.com/standardnotes/web]()
-
-For reference, you can also see the source for a standard Standard File server:
-[https://github.com/standardfile/ruby-server]()
+For reference, see also [the official Ruby implementation](https://github.com/standardfile/ruby-server) for the Standard File server.
 
 Follow [@standardnotes](https://twitter.com/standardnotes) for updates and announcements.
