@@ -57,7 +57,7 @@ You send this token via an HTTP header:
 
 ### Registration
 
-On registration, the client will choose a cost for PBKDF2. Recommended is 60,000 for native platforms and 3,000 for web platforms.
+On registration, the client will choose a cost for PBKDF2. Recommended is at least 100,000 for native platforms and 3,000 for web platforms.
 
 To register, the client must also generate a salt. For logging in, the salt is returned by the server, but for registering, it must be done locally.
 

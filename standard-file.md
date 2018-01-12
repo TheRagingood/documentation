@@ -281,7 +281,7 @@ Note: client-server connections must be made securely through SSL/TLS.
 
 | name | details |
 | --- | --- |
-| pw_cost | The number of iterations to be used by the KDF. On native platforms, this should be around 100,000. However note that non-native clients (web clients not using WebCrypto) will not be able to handle any more than 3,000 iterations. |
+| pw_cost | The number of iterations to be used by the KDF. On native platforms, this should be at least 100,000. However note that non-native clients (web clients not using WebCrypto) will not be able to handle any more than 3,000 iterations. |
 | pw_salt | A salt for password derivation. This value is initially created by the client during registration. |
 
 <h1><a id='key-generation'></a>Key Generation</h1>
