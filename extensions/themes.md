@@ -4,15 +4,9 @@ Themes allow you to customize the look and feel of the Standard Notes app on all
 
 ## Web/Desktop Themes
 
-You can view the [source code](https://github.com/sn-extensions/themes/tree/master/themes) of our official themes in order to best understand how to create your own theme.
+You can view the [source code](https://github.com/sn-extensions/solarized-dark-theme) of our official themes in order to best understand how to create your own theme.
 
-Themes are simply css files that are installed with the following link format:
-
-```
-https://host.org/theme.css?type=theme&name=MyTheme
-```
-
-Note that if you are using the official Standard Notes web app, your theme must be hosted behind an HTTPS link or else your browser will refuse to load it.
+For how to install a theme, please see [Publishing](/publishing).
 
 ## Mobile Themes
 
@@ -48,13 +42,13 @@ Mobile themes are installed the same way regular themes are installed. In fact, 
 When you install
 
 ```
-https://host.org/theme.css?type=theme&name=MyTheme
+https://host.org/theme.css
 ```
 
 the mobile app will look for
 
 ```
-https://host.org/theme.json?type=theme&name=MyTheme
+https://host.org/theme.json
 ```
 
 and automatically display it in the themes list. If the server does not respond to the url, the mobile app will disable that theme and gray it out in the list.
@@ -65,4 +59,4 @@ The mobile app will download a theme once and cache it indefinitely. If you're i
 
 # Licensing
 
-Our themes are provided open-source mainly for educational and quality purposes. You're free to install them on your own servers, but please consider subscribing to [Standard Notes Extended](https://standardnotes.org/extended) to help sustain future development and the entire Standard Notes ecosystem.
+Our themes are provided open-source mainly for educational and quality purposes. You're free to install them on your own servers, but please consider subscribing to [Standard Notes Extended](https://standardnotes.org/extensions) to help sustain future development of the Standard Notes ecosystem.

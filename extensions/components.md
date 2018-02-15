@@ -78,19 +78,7 @@ Save all changes, and make sure the `grunt watch` process catches those changes 
 
 ## Installing
 
-1. To install your component in Standard Notes, you need to add a few flags to the localhost URL.
-
-	If your url is `http://localhost:8000`, we'll add these flags so that it's understandable to Standard Notes:
-
-	`http://localhost:8000?type=component&area=editor-stack&name=Word Counter`
-
-	You can change the name, but keep the other flags as is.
-
-2. Copy that link into the "Extensions" menu and paste it in the Install Extension input at the bottom of the menu.
-
-3. Click "Activate" on the install component. You should now see a permissions dialog to access the working note. Press Accept. (If you don't see this dialog, open the Developer Console to see if there are any JavaScript errors.)
-
-4. That's it! You should now see a little bar on the bottom of the editor pane that has the number of words for the current note. If it's a new note, type some words in the editor, and watch the component refresh automatically.
+See [Publishing](/publishing).
 
 If you'd like to see the finished product, switch to the `word-counter` branch:
 
