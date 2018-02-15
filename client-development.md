@@ -21,11 +21,11 @@ Auth params include:
 - pw_cost (the number of iterations for the kdf)
 
 
-Next, compute the user's password and encryption keys using the user's text field inputted password:
+Next, compute the user's password and encryption keys using the user's text field inputted password, the `pw_salt` and `pw_cost` fields as received earlier, and a `PBKDF2` output length of 768 bits:
 
 ```
-generatePasswordAndKey(password, pw_salt, pw_func, pw_alg, pw_cost, pw_key_size) {		
-	var output = PBKDF2(password, pw_salt, { keySize: 768/32, hasher: CryptoJS.algo.SHA512, iterations: pw_cost }).toString();
+generatePasswordAndKey(password, pw_salt, pw_cost) {		
+	var output = PBKDF2(password, pw_salt, { keySize: 768, hasher: CryptoJS.algo.SHA512, iterations: pw_cost }).toString();
 
 	var outputLength = output.length;
 	var splitLength = outputLength/3;
@@ -57,7 +57,7 @@ You send this token via an HTTP header:
 
 ### Registration
 
-On registration, the client will choose a cost for PBKDF2. Recommended is 60,000 for native platforms and 3,000 for web platforms.
+On registration, the client will choose a cost for PBKDF2. Recommended is at least 100,000 for native platforms and 3,000 for web platforms.
 
 To register, the client must also generate a salt. For logging in, the salt is returned by the server, but for registering, it must be done locally.
 
@@ -355,7 +355,7 @@ referencesParams() {
 
 **CryptoHelper**
 
-Please see the web implementation for encrypting and decrypting items, available here: https://github.com/standardnotes/web/blob/master/app/assets/javascripts/app/services/helpers/encryptionHelper.js.
+Please see the web implementation for encrypting and decrypting items, available [here](https://github.com/standardnotes/web/tree/master/app/assets/javascripts/app/services/encryption).
 
 Next, let's merge `refreshItems()` and `saveDirty()` into one function called `sync()`:
 
@@ -403,17 +403,13 @@ After successful sync, delete the item from your local database.
 
 ## Next Steps
 
-Join the [Slack](https://slackin-ekhdyygaer.now.sh/) group to discuss implementation questions.
-
-You can also email [dev@standardnotes.org](mailto:dev@standardnotes.org) for any questions.
+Join the [Slack](https://standardnotes.org/slack) group for general development discussion. You can also email [dev@standardnotes.org](mailto:dev@standardnotes.org) for any questions.
 
 Check out the source code for other completed clients:
 
-iOS: [https://github.com/standardnotes/iOS]()
+* [iOS + Android](https://github.com/standardnotes/mobile)
+* [Web](https://github.com/standardnotes/web)
 
-Web: [https://github.com/standardnotes/web]()
-
-For reference, you can also see the source for a standard Standard File server:
-[https://github.com/standardfile/ruby-server]()
+For reference, see also [the official Ruby implementation](https://github.com/standardfile/ruby-server) for the Standard File server.
 
 Follow [@standardnotes](https://twitter.com/standardnotes) for updates and announcements.

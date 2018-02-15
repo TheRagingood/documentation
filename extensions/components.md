@@ -80,10 +80,10 @@ Save all changes, and make sure the `grunt watch` process catches those changes 
 
 See [Publishing](/publishing).
 
-If you'd like to see the finished product, switch to the `word-counter` branch:
+If you'd like to see the finished product, switch to the `word-count` branch:
 
 ```
-git checkout word-counter
+git checkout word-count
 ```
 
 ## Available Areas
