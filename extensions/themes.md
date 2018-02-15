@@ -6,7 +6,7 @@ Themes allow you to customize the look and feel of the Standard Notes app on all
 
 You can view the [source code](https://github.com/sn-extensions/solarized-dark-theme) of our official themes in order to best understand how to create your own theme.
 
-For how to install a theme, please see [Publishing](/publishing).
+For how to install a theme, please see [Publishing](/extensions/publishing).
 
 ## Mobile Themes
 

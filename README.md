@@ -1,33 +1,3 @@
-# Standard Notes
-## A standard notes app with an un-standard focus on longevity and privacy.
-
-*Notes so standard, they'll last forever.*
-
-> What I write is important to me. I want to be able to read it fifty years from now. A hundred years from now. So where do I go? Apple Notes? Google? Other private, short-lived, growth-oriented companies? No. What we need is something that _focuses_ on durability and **not** growth.
-
-Standard Notes is a basic notes app that delivers only the essentials in note taking. Because of its simplicity and resistance to growth, users can count on:
-
-- **A standard data format that allows portability and an extended lifetime**. The more complex and custom an app becomes, the more likely your data becomes locked in to that platform, and the more buggy and laggy the application becomes. Because Standard Notes focuses on the "standard" format of a note, this data format, along with respective user-facing applications, are easy to maintain, and can exist for decades without issue. This means a less nomadic lifestyle for note takers.
-
-- **A set of cross platform applications that don't deteriorate over time**. Simply put, applications that are simple are simpler to maintain. Applications that aim to survive an apocalypse must adapt to a different lifestyle. Because of this focus on durability, you won't be forced to switch over to a new system every time developers of your favorite notes app decide to change everything around or just completely abandon the project. And because the data format is built on top of the [Standard File](https://standardfile.org) format, your Standard Notes data can be used with any app that supports your Standard File account.
-
-- **High security and privacy**. Because Standard Notes uses the Standard File format, all your notes are encrypted on your device before being sent over the wire. This means that even if the server was hacked and all your data was stolen, the attacker would only see gibberish - only you can decrypt your notes with your password key. Standard Notes applications also do not use any analytics tracking services and will never require you to agree to any "Terms of Service".
-
-## What makes the cut for note "basics"?
-
-The basic form of a note is timeless: it has existed since the invention of paper. Most things we know about history is known through the journals of our ancestors.
-
-**Standard Notes aims to simply translate the "journal" standard into its digital form. This means:**
-
-- a basic note with a title and text
-- basic tagging system that allows a note to belong to one or multiple tags
-- the ability to search and filter notes based on tags or keywords
-
-**And because data portability and durability are of utmost importance, Standard Notes allows you to easily:**
-
-- export all data as a human readable file
-- import data from a previously exported file
-
 # Getting Started
 
 To get started, [download Standard Notes](https://standardnotes.org/downloads/all) for your platform.

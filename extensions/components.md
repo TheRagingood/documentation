@@ -78,7 +78,7 @@ Save all changes, and make sure the `grunt watch` process catches those changes 
 
 ## Installing
 
-See [Publishing](/publishing).
+See [Publishing](/extensions/publishing).
 
 If you'd like to see the finished product, switch to the `word-count` branch:
 
