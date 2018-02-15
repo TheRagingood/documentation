@@ -5,6 +5,7 @@
   * [Components](extensions/components.md)
   * [Actions](extensions/actions.md)
   * [Themes](extensions/themes.md)
+  * [Publishing](extensions/publishing.md)
 * [Self Hosting](self-hosting.md)
 * [Standard File](standard-file.md)
   * [EC2 & Nginx](standard-file/self-hosting/ec2-and-nginx.md)
