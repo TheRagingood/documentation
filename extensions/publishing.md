@@ -18,28 +18,44 @@ metatype: json
         "area": "editor-editor",
         "version": "1.0.0",
         "description": "A fully featured Markdown editor that supports live preview, a styling toolbar, and split pane support.",
-        "url": "https://listed.standardnotes.org/my-extension-json-link",
+        "url": "https://domain.org/link-to-hosted-extension",
         "download_url": "https://github.com/sn-extensions/advanced-markdown-editor/archive/1.0.184.zip",
-	"latest_url": "https://listed.standardnotes.org/my-extension-json-link",
+        "latest_url": "https://listed.standardnotes.org/my-extension-json-link",
         "marketing_url": "https://standardnotes.org/extensions/advanced-markdown",
         "thumbnail_url": "https://domain.org/editors/adv-markdown.jpg"
 }
 ```
 
-2. Head over to listed.standardnotes.org, and generate an account by clicking "Generate Author Link". Copy that link, then, in the Extensions menu in Standard Notes, click "Import Extension" in the bottom right corner. Paste in your link, and press enter, then accept.
+1. Head over to \[listed.standardnotes.org\]\(https://listed.standardnotes.org\), and generate an account by clicking "Generate Author Link". Copy that link, then, in the Extensions menu in Standard Notes, click "Import Extension" in the bottom right corner. Paste in your link, and press enter, then accept.
 
-3. Back in your "my-extension.json" note, click "Actions" in the menu bar below the note title, then click "Publish to Private Link". Click "Open Private Link" to preview your JSON endpoint.
+2. Back in your "my-extension.json" note, click "Actions" in the menu bar below the note title, then click "Publish to Private Link". Click "Open Private Link" to preview your JSON endpoint.
 
-4. In the Extensions window, click "Import Extension", and paste in your JSON endpoint, press Enter, then accept to install your extension.
+3. In the Extensions window, click "Import Extension", and paste in your JSON endpoint, press Enter, then accept to install your extension.
+
+#### Key Descriptions
+
+| Key | Description |
+| :--- | :--- |
+| identifier | A unique, reverse domain style identifier for your extension. |
+| name | The name of your extension. |
+| content\_type | Always "SN\|Component". |
+| area | One of \[editor-editor, editor-stack, themes, note-tags, tags-list\] |
+| version | The current version of your extension. Needs to match the version in your GitHub repo's package.json file. |
+| description | The description that will be displayed in the Extensions browser. |
+| url | Used by the web and mobile app. This value is the location of the hosted extension. It must be a link to either an HTML file \(for components\) or a CSS file \(for themes\). |
+| download\_url | Used by the desktop app. Must be a zip file. Caters strongly to GitHub auto-generated release files. The zip file must contain a package.json file with at least a version key. By default, the desktop app will look for an "index.html" in the root directory of the zip file. \(Note that if using GitHub auto-generated zip files, the contents of the zip file are embedded within a folder. The desktop app automatically unnests the folder contents and moves it up one level so it is on the root level.\) If your main file is not called index.html, or if it is a CSS file, please see below in "Local Installation" under "To specify the root file of your extension" instructions. |
+| marketing\_url | If specified, the Extensions manager will display an "Info" button, which on click, will open a web browser to this location. |
+| thumbnail\_url | The image the Extensions manager will display for your extension. |
 
 ### Local Installation
+
 Extensions in Standard Notes desktop support local installation. We recommend using GitHub releases to host your download file.
 
 1. In your extension repository on GitHub, go to the Releases tab, then click "Draft New Release".
 
-2. Click "Publish release" (you don't need to enter any information). Standard Notes will use the auto-generated "Source code (zip)" archive that GitHub generates.
+2. Click "Publish release" \(you don't need to enter any information\). Standard Notes will use the auto-generated "Source code \(zip\)" archive that GitHub generates.
 
-3. Right click on "Source code (zip)", then choose the option to Copy Link Address. Use this value for `download_url` in your JSON contents.
+3. Right click on "Source code \(zip\)", then choose the option to Copy Link Address. Use this value for `download_url` in your JSON contents.
 
 By default, Standard Notes will look for the `index.html` file located in the root of the project. If your main file is not in the root, you can specify a custom path.
 
@@ -61,8 +77,9 @@ By default, Standard Notes will look for the `index.html` file located in the ro
 
 ### Autoupdate
 
-Standard Notes will ping the `latest_url`endpoint automatically to update extensions. For this value, you can use the same JSON endpoint you're using for `url` (your `my-extension.json` endpoint).
+Standard Notes will ping the `latest_url`endpoint automatically to update extensions. For this value, you can use the same JSON endpoint you're using for `url` \(your `my-extension.json` endpoint\).
 
 ### Questions?
 
-Join the [Slack group](https://standardnotes.org/slack) and ask away in the #dev channel.
+Join the [Slack group](https://standardnotes.org/slack) and ask away in the \#dev channel.
+
