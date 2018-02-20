@@ -38,7 +38,7 @@ metatype: json
 | :--- | :--- |
 | identifier | A unique, reverse domain style identifier for your extension. |
 | name | The name of your extension. |
-| content\_type | Always SN&\#124;Component. |
+| content\_type | Always SN&#124;Component. |
 | area | One of \[editor-editor, editor-stack, themes, note-tags, tags-list\] |
 | version | The current version of your extension. Needs to match the version in your GitHub repo's package.json file. |
 | description | The description that will be displayed in the Extensions browser. |
@@ -82,4 +82,3 @@ Standard Notes will ping the `latest_url`endpoint automatically to update extens
 ### Questions?
 
 Join the [Slack group](https://standardnotes.org/slack) and ask away in the \#dev channel.
-
