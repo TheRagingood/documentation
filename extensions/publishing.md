@@ -26,7 +26,7 @@ metatype: json
 }
 ```
 
-1. Head over to \[listed.standardnotes.org\]\([https://listed.standardnotes.org\](https://listed.standardnotes.org\)\), and generate an account by clicking "Generate Author Link". Copy that link, then, in the Extensions menu in Standard Notes, click "Import Extension" in the bottom right corner. Paste in your link, and press enter, then accept.
+1. Head over to \[listed.standardnotes.org\]\([https://listed.standardnotes.org\](https://listed.standardnotes.org%29\), and generate an account by clicking "Generate Author Link". Copy that link, then, in the Extensions menu in Standard Notes, click "Import Extension" in the bottom right corner. Paste in your link, and press enter, then accept.
 
 2. Back in your "my-extension.json" note, click "Actions" in the menu bar below the note title, then click "Publish to Private Link". Click "Open Private Link" to preview your JSON endpoint.
 
@@ -38,7 +38,7 @@ metatype: json
 | :--- | :--- |
 | identifier | A unique, reverse domain style identifier for your extension. |
 | name | The name of your extension. |
-| content\_type | Always \`SN\|Component\`. |
+| content\_type | Always SN&\#124;Component. |
 | area | One of \[editor-editor, editor-stack, themes, note-tags, tags-list\] |
 | version | The current version of your extension. Needs to match the version in your GitHub repo's package.json file. |
 | description | The description that will be displayed in the Extensions browser. |
