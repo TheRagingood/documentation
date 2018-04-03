@@ -18,9 +18,10 @@ For example, you may want your notes and tags to be synced to your Dropbox for a
 For a list of available extensions, see [extensions](https://standardnotes.org/extensions).
 
 # Open Source
-All Standard Notes apps are [open source](https://github.com/standardnotes). This means anyone can inspect the code and make sure it's not doing anything you wouldn't want it to do. And because the Standard Note format is openly published, anyone can build their own Standard Notes app. This means that you're not locked in to using our own suite of Standard Notes applications. This also means the lifetime of your notes is not limited by the lifetime of the Standard Notes application suite.
 
-It's not something we consider often, but odds are, you as a human will outlive most of the private services you rely on today to manage your data. By building on top of a more open format, Standard Notes users don't have to worry about what would happen if Standard Notes got run over by a bus.
+The Standard Notes ecosystem is [100% open source](https://github.com/standardnotes), including [this documentation](https://github.com/standardnotes/documentation)! This means anyone is free to improve upon or inspect the code and make sure it's not doing anything you wouldn't want it to do.
+
+And because the Standard File specification is [openly published](https://github.com/standardfile), anyone can build their own Standard Notes app (client) or server. Neither you nor your notes are locked in to Standard Note's suite of applications. It's not something we consider often, but odds are, you as a human will outlive most of the private services you rely on today to manage your data. By building on top of a more open format, Standard Notes users don't have to worry about what would happen if Standard Notes got run over by a bus.
 
 # FAQ
 
