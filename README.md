@@ -4,24 +4,23 @@ To get started, [download Standard Notes](https://standardnotes.org/downloads/al
 
 If you're tech savvy, you can even [host your own Standard File server](/standard-file).
 
-# Extensions
-
-To keep the core application as simple and as uncluttered as possible, Standard Notes allows for the installation of arbitrary extensions. These extensions are URL based, and anyone can build an extension.
-
-Extensions are simple yet extremely powerful. Extensions allow for things like:
-- 3rd party data sync
-- Revision control
-- Publishing your notes to your blog
-
-For example, you may want your notes and tags to be synced to your Dropbox for added redundancy and peace of mind. Extensions make this really easy.
-
-For a list of available extensions, see [extensions](https://standardnotes.org/extensions).
-
 # Open Source
 
 The Standard Notes ecosystem is [100% open source](https://github.com/standardnotes), including [this documentation](https://github.com/standardnotes/documentation)! This means anyone is free to improve upon or inspect the code and make sure it's not doing anything you wouldn't want it to do.
 
 And because the Standard File specification is [openly published](https://github.com/standardfile), anyone can build their own Standard Notes app (client) or server. Neither you nor your notes are locked in to Standard Note's suite of applications. It's not something we consider often, but odds are, you as a human will outlive most of the private services you rely on today to manage your data. By building on top of a more open format, Standard Notes users don't have to worry about what would happen if Standard Notes got run over by a bus.
+
+# Extensions
+
+To keep the core application as simple and as uncluttered as possible, Standard Notes allows for the installation of arbitrary extensions. These extensions are URL-based, and anyone can build an extension.
+
+Extensions are simple yet extremely powerful. They allow for features like:
+
+- [Editor theme customization](https://github.com/sn-extensions/titanium-theme)
+- [3rd party cloud backups](https://github.com/sn-extensions/cloudlink) (e.g. Dropbox)
+- [Publishing your notes online as a blog](https://github.com/standardnotes/listed)
+
+And more! See [here](https://standardnotes.org/extensions) for a list of our extensions that are already available to you. As always, they are [open source](https://github.com/sn-extensions).
 
 # FAQ
 
